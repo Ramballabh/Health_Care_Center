@@ -69,7 +69,7 @@
 
         .menu {
             float: right;
-            margin-left: 475px;
+            margin-left: 470px;
         }
 
         .menu li {
@@ -83,10 +83,11 @@
             color: black;
         }
 
-        .appointment-btn a{
-            background-color:yellowgreen;
+        .appointment-btn a {
+            background-color: yellowgreen;
             color: white;
         }
+
         .appointment-btn a:hover {
             background-color: blue;
             color: white;
@@ -94,31 +95,179 @@
 
         #banner {
             text-align: center;
-            color:black;
+            color: black;
             background-repeat: no-repeat;
             background-size: cover;
             height: 630px;
             background-image: url("img/slider2.jpg");
             background-position: bottom;
+            margin-bottom: 40px;
         }
 
-        #banner h3{
+        #banner h3 {
             padding-top: 225px;
         }
 
-        #banner h1{
+        #banner h1 {
             padding-bottom: 20px;
         }
 
-        #banner a{
+        #banner a {
             text-decoration: none;
             padding: 15px;
             background-color: yellowgreen;
             color: white;
-            
         }
-        #banner a:hover{
+
+        #banner a:hover {
             color: blue;
+        }
+
+        #intro-section {
+            background-image: url("img/about-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+        }
+
+        #intro-section h1 {
+            padding-top: 70px;
+            padding-left: 20px;
+        }
+
+        #intro-section p {
+            padding-top: 30px;
+            padding-left: 20px
+        }
+
+        #staff {
+            width: 100%;
+            height: 800px;
+        }
+
+        #staff h1 {
+            padding: 40px 0px 10px 100px;
+            font-size: 40px;
+        }
+
+        .team {
+            margin-left: 150px;
+            width: 20%;
+            height: 700px;
+            display: inline-block;
+        }
+
+        .team img {
+            height: 70%;
+            padding: 30px;
+        }
+
+        #latest-news {
+            width: 100%;
+            height: 900px;
+            background-color: rgb(255, 255, 240);
+        }
+
+        #latest-news h1 {
+            font-size: 40px;
+            text-align: center;
+            padding: 70px;
+        }
+
+        .news {
+            margin-left: 50px;
+            width: 28%;
+            height: 700px;
+            display: inline-block;
+        }
+
+        .news h3 {
+            font-size: 20px;
+        }
+
+        .news img {
+            height: 70%;
+            width: 100%;
+        }
+
+        #appointment-section {
+            width: 100%;
+            height: 855px;
+        }
+
+        #appointment-section img {
+            width: 100%;
+        }
+
+        #appointment-photo {
+            float: left;
+            width: 50%;
+        }
+
+        #appointment-form {
+            padding-top: 40px;
+            float: left;
+            width: 50%;
+        }
+
+        #appointment-section label {
+            color: #393939;
+            font-weight: 500;
+        }
+
+        #appointment-section input,
+        #appointment-section select {
+            height: 45px;
+            width: 250px;
+        }
+
+        #appointment-section textarea {
+            width: 600px;
+            height: 240px;
+        }
+
+        .form-control {
+            width: 600px;
+        }
+
+        #appointment-section button#cf-submit {
+            background: #a5c422;
+            color: #ffffff;
+            font-weight: 600;
+            height: 55px;
+        }
+
+        #appointment-section button#cf-submit:hover {
+            background: #393939;
+            color: #ffffff;
+        }
+
+        #appointment-section .form-control {
+            background: #f9f9f9;
+            border: none;
+            border-radius: 3px;
+            box-shadow: none;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            transition: all ease-in-out 0.4s;
+        }
+
+        #appointment-form h1 {
+            margin-right: 100px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 300px;
+            background-color: rosybrown;
+        }
+
+        .footer-thumb {
+            width: 33%;
+            float: left;
+            height: 300px;
         }
     </style>
 </head>
@@ -150,6 +299,159 @@
             <h3>Let's make your life happier</h3><br>
             <h1>Healthy Living</h1><br>
             <a href="#team">Meet Our Doctors</a>
+        </div>
+
+        <div id="intro-section">
+            <h1>Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos non sed facere totam quaerat<br> sunt ex
+                voluptatum quisquam dolorem alias. Ex fugit possimus itaque cum vel mollitia culpa. Eos, explicabo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe qui possimus ea soluta<br> quaerat
+                quo impedit aperiam officia consectetur.</p>
+        </div>
+
+        <div id="staff">
+            <h1>Our Doctors</h1>
+            <div class="team">
+                <img src="img/team-image1.jpg">
+                <h3>Doctor 1</h3>
+                <p>General Principal</p>
+                <div class="team-contact-info">
+                    <p><i class="fa fa-phone"></i> 010-020-0120</p>
+                    <p><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
+                </div>
+            </div>
+            <div class="team">
+                <img src="img/team-image2.jpg">
+                <h3>Doctor 2</h3>
+                <p>Pregnancy</p>
+                <div class="team-contact-info">
+                    <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                    <p><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>
+                </div>
+            </div>
+            <div class="team">
+                <img src="img/team-image3.jpg">
+                <h3>Doctor 3</h3>
+                <p>Cardiology</p>
+                <div class="team-contact-info">
+                    <p><i class="fa fa-phone"></i> 010-040-0140</p>
+                    <p><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="latest-news">
+            <h1>Latest News</h1>
+            <div class="news">
+                <img src="img/news-image1.jpg">
+                <span>March 08, 2018</span><br>
+                <h3>About Amazing Technology</h3><br>
+                <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
+            </div>
+
+            <div class="news">
+                <img src="img/news-image2.jpg">
+                <span>April 08, 2019</span><br>
+                <h3>Introducing a new healing process</h3><br>
+                <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
+            </div>
+
+            <div class="news">
+                <img src="img/news-image3.jpg">
+                <span>April 08, 2020</span><br>
+                <h3>Review Annual Medical Research</h3><br>
+                <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
+            </div>
+        </div>
+
+        <div id="appointment-section">
+            <div id="appointment-photo">
+                <img src="img/appointment-image.jpg">
+            </div>
+            <div id="appointment-form">
+                <h1>Make an appointment</h1><br>
+                <form>
+                    <label
+                        for="name"><b>Name</b></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" class="form-control" id="name" name="name"
+                        placeholder="Full Name">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"><br><br>
+
+                    <label for="date"><b>Select
+                            Date</b></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <label for="select"><b>Select Department</b></label><br>
+                    <input type="date" name="date" value=""
+                        class="form-control">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <select class="form-control">
+                        <option>General Health</option>
+                        <option>Cardiology</option>
+                        <option>Dental</option>
+                        <option>Medical Research</option>
+                    </select><br><br>
+
+                    <label for="telephone"><b>Phone Number</b></label><br>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone"><br><br>
+                    <label for="Message"><b>Additional Message</b></label><br><br>
+                    <textarea class="form-control" rows="5" id="message" name="message"
+                        placeholder="Message"></textarea><br><br>
+                    <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-thumb">
+                <h4>Contact Info</h4><br>
+                <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat
+                    ultricies.</p><br>
+
+                <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                    <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-thumb">
+                <h4>Latest News</h4><br>
+                <div class="latest-stories">
+                    <div class="stories-image">
+                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="stories-info">
+                        <a href="#">
+                            <h5>Amazing Technology</h5>
+                        </a>
+                        <span>March 08, 2018</span>
+                    </div>
+                </div>
+
+                <div class="latest-stories">
+                    <div class="stories-image">
+                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="stories-info">
+                        <a href="#">
+                            <h5>New Healing Process</h5>
+                        </a>
+                        <span>February 20, 2018</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-thumb">
+                <div class="opening-hours">
+                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                    <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                    <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                    <p>Sunday <span>Closed</span></p>
+                </div>
+
+                <ul class="social-icon">
+                    <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
