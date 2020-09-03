@@ -101,7 +101,7 @@
             height: 630px;
             background-image: url("img/slider2.jpg");
             background-position: bottom;
-            margin-bottom: 40px;
+            
         }
 
         #banner h3 {
@@ -128,7 +128,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 600px;
+            height: 730px;
         }
 
         #intro-section h1 {
@@ -172,7 +172,7 @@
         #latest-news h1 {
             font-size: 40px;
             text-align: center;
-            padding: 70px;
+            padding: 50px;
         }
 
         .news {
@@ -198,11 +198,13 @@
 
         #appointment-section img {
             width: 100%;
+            height: 850px;
         }
 
         #appointment-photo {
             float: left;
             width: 50%;
+            height: 855px;
         }
 
         #appointment-form {
@@ -260,14 +262,58 @@
 
         #footer {
             width: 100%;
-            height: 300px;
-            background-color: rosybrown;
+            height: 200px;
         }
 
         .footer-thumb {
-            width: 33%;
+            width: 25%;
             float: left;
-            height: 300px;
+            height: 200px;
+            margin: 40px;
+            margin-left: 60px;
+        }
+
+        .stories-image,
+        .stories-info {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .stories-image img {
+            border-radius: 100%;
+            width: 65px;
+            height: 65px;
+        }
+
+        .stories-info {
+            margin-left: 15px;
+        }
+
+        .stories-info h5 {
+            margin-bottom: 2px;
+        }
+
+        .stories-info span {
+            color: #858585;
+            font-size: 12px;
+        }
+
+        .img-responsive {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .social-icon li {
+            list-style: none;
+            float: left;
+        }
+
+        .footer-thumb .social-icon li a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -289,7 +335,7 @@
             <li><a href="#about" class="smoothScroll">About Us</a></li>
             <li><a href="#team" class="smoothScroll">Doctors</a></li>
             <li><a href="#news" class="smoothScroll">News</a></li>
-            <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+            <li><a href="#contact" class="smoothScroll">Contact</a></li>
             <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
         </ul>
     </div>
@@ -302,6 +348,7 @@
         </div>
 
         <div id="intro-section">
+            <a name="about"></a>
             <h1>Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos non sed facere totam quaerat<br> sunt ex
                 voluptatum quisquam dolorem alias. Ex fugit possimus itaque cum vel mollitia culpa. Eos, explicabo.</p>
@@ -310,6 +357,7 @@
         </div>
 
         <div id="staff">
+            <a name="team"></a>
             <h1>Our Doctors</h1>
             <div class="team">
                 <img src="img/team-image1.jpg">
@@ -341,6 +389,7 @@
         </div>
 
         <div id="latest-news">
+            <a name="news"></a>
             <h1>Latest News</h1>
             <div class="news">
                 <img src="img/news-image1.jpg">
@@ -365,6 +414,7 @@
         </div>
 
         <div id="appointment-section">
+            <a name="appointment"></a>
             <div id="appointment-photo">
                 <img src="img/appointment-image.jpg">
             </div>
@@ -399,59 +449,60 @@
                 </form>
             </div>
         </div>
-        <div id="footer">
-            <div class="footer-thumb">
-                <h4>Contact Info</h4><br>
-                <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat
-                    ultricies.</p><br>
+    </div>
+    <div id="footer">
+        <a name="contact"></a>
+        <div class="footer-thumb">
+            <h4>Contact Info</h4><br>
+            <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat
+                ultricies.</p><br>
 
-                <div class="contact-info">
-                    <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                    <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+            <div class="contact-info">
+                <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-thumb">
+            <h4>Latest News</h4><br>
+            <div class="latest-stories">
+                <div class="stories-image">
+                    <a href="#"><img src="img/news-image.jpg" class="img-responsive" alt=""></a>
+                </div>
+                <div class="stories-info">
+                    <a href="#">
+                        <h5>Amazing Technology</h5>
+                    </a>
+                    <span>March 08, 2018</span>
                 </div>
             </div>
 
-            <div class="footer-thumb">
-                <h4>Latest News</h4><br>
-                <div class="latest-stories">
-                    <div class="stories-image">
-                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="stories-info">
-                        <a href="#">
-                            <h5>Amazing Technology</h5>
-                        </a>
-                        <span>March 08, 2018</span>
-                    </div>
+            <div class="latest-stories">
+                <div class="stories-image">
+                    <a href="#"><img src="img/news-image.jpg" class="img-responsive" alt=""></a>
                 </div>
-
-                <div class="latest-stories">
-                    <div class="stories-image">
-                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="stories-info">
-                        <a href="#">
-                            <h5>New Healing Process</h5>
-                        </a>
-                        <span>February 20, 2018</span>
-                    </div>
+                <div class="stories-info">
+                    <a href="#">
+                        <h5>New Healing Process</h5>
+                    </a>
+                    <span>February 20, 2018</span>
                 </div>
             </div>
+        </div>
 
-            <div class="footer-thumb">
-                <div class="opening-hours">
-                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                    <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                    <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                    <p>Sunday <span>Closed</span></p>
-                </div>
-
-                <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                </ul>
+        <div class="footer-thumb">
+            <div class="opening-hours">
+                <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4><br>
+                <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                <p>Sunday <span>Closed</span></p><br>
             </div>
+
+            <ul class="social-icon">
+                <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
         </div>
     </div>
 
