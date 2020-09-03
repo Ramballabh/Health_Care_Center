@@ -7,6 +7,12 @@
     <title>Health_Care_Center</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/Style.css">
+    <script>
+        function myFunction(){
+            window.alert("Your Appointment is done.");
+        }
+    </script>
+
 </head>
 
 <body>
@@ -136,7 +142,7 @@
                     <label for="Message"><b>Additional Message</b></label><br><br>
                     <textarea class="form-control" rows="5" id="message" name="message"
                         placeholder="Message"></textarea><br><br>
-                    <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                    <button type="submit" class="form-control" id="cf-submit" name="submit" onclick="myFunction()">Submit Button</button>
                 </form>
             </div>
         </div>
