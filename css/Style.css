@@ -16,3 +16,28 @@
     float: left;
     padding-left: 100px ;
 }
+
+#navigation{
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.075);
+    border: none;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+}
+
+.menu li a{
+    text-decoration: none;
+}

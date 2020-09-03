@@ -1,25 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health_Care_Center</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            background: #ffffff;
+            border-bottom: 1px solid #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            font-size: 15px;
+        }
+
+        #header h5 {
+            margin-left: 70px;
+        }
+
+        #header span {
+            font-weight: 500;
+            display: inline-block;
+            padding: 11px 15px;
+        }
+
+        #header span.date-icon {
+            border-left: 1px solid #f2f2f2;
+            border-right: 1px solid #f2f2f2;
+            padding-right: 19px;
+            padding-left: 19px;
+        }
+
+        #header span i {
+            color: #a5c422;
+            margin-right: 5px;
+        }
+
+        .right-portion {
+            float: right;
+            padding-left: 300px;
+        }
+
+        #navigation {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .075);
+            border: none;
+            margin-bottom: 0;
+            padding: 10px;
+            margin-right: 50px;
+            height: 50px;
+            display: flex;
+
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 225px;
+        }
+
+        .menu {
+            float: right;
+            margin-left: 475px;
+        }
+
+        .menu li {
+            list-style: none;
+            float: left;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            padding: 20px;
+            color: black;
+        }
+
+        .appointment-btn a{
+            background-color:yellowgreen;
+            color: white;
+        }
+        .appointment-btn a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        #banner {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color:black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            background-image: url("img/slider2.jpg");
+            background-position: bottom;
+        }
+
+        #banner a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: yellowgreen;
+            color: white;
+            
+        }
+        #banner a:hover{
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     <div id="header">
         <h5>Welcome to Health Care Center</h5>
         <div class="right-portion">
-            <span class="phone-icon"><i class="fa fa-phone"></i> 000-000-0000  |</span>
-            <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Sat)  |</span>
+            <span class="phone-icon"><i class="fa fa-phone"></i> 000-000-0000 | </span>
+            <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Sat) | </span>
             <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
         </div>
     </div>
 
     <div id="navigation">
-        <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
-        ul
+        <a href="index.html" class="logo"><i class="fa fa-h-square"></i>ealth Center</a>
+        <ul class="menu">
+            <li><a href="#top" class="smoothScroll">Home</a></li>
+            <li><a href="#about" class="smoothScroll">About Us</a></li>
+            <li><a href="#team" class="smoothScroll">Doctors</a></li>
+            <li><a href="#news" class="smoothScroll">News</a></li>
+            <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+            <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+        </ul>
     </div>
-    
+
+    <div id="main-content">
+        <div id="banner">
+            <h3>Let's make your life happier</h3><br>
+            <h1>Healthy Living</h1><br>
+            <a href="#team">Meet Our Doctors</a>
+        </div>
+    </div>
+
 </body>
+
 </html>
